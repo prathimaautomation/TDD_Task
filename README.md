@@ -16,7 +16,7 @@ building_python_package
 program.py
 setup.py
 ```
-### setup.py
+- Let's build our package starting with setup.py
 ```python
 from setuptools import setup
 
@@ -28,15 +28,7 @@ author = "Prathima at Sparta Global"
 author_email = "ramagiri.prathima@gmail.com"
 url = "https://spartaglobal.com"
 ```
-### program.py
-```python
-from app.fizzbuzz import Fizzbuzz
-
-one_to_100 = Fizzbuzz(1, 100)
-
-print(one_to_100.fizbuzz_list)
-```
-### fizzbuzz.py
+- code for fizzbuzz.py
 ```python
 class Fizzbuzz:
 
@@ -64,3 +56,13 @@ class Fizzbuzz:
                 self.fizzbuzz_list.append(num)
 
 ```
+- code for program.py
+```python
+from app.fizzbuzz import Fizzbuzz
+
+one_to_100 = Fizzbuzz(1, 100)
+
+print(one_to_100.fizbuzz_list)
+```
+
+- pip install . to install our package using pip package manager
